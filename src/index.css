@@ -14,6 +14,10 @@
   --color-white-100: #f3f3f3;
 }
 
+:root {
+  --bg-hero: url("../assets/herobg.png");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -51,6 +55,13 @@
     #804dee 0%,
     rgba(60, 51, 80, 0) 100%
   );
+}
+
+.bg-hero {
+  background-image: var(--bg-hero);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .green-pink-gradient {
