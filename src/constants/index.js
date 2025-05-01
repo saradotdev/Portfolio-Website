@@ -3,26 +3,33 @@ import {
   backend,
   creator,
   web,
+  python,
+  django,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
+  vite,
+  mysql,
   git,
-  figma,
-  docker,
+  //redux,
+  //tailwind,
+  //nodejs,
+  //mongodb,
+  //figma,
+  //docker,
   meta,
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  adoptme,
+  recipeblog,
+  speaknow,
+  movieflix,
+  wordle,
+  musician,
+  //threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -42,6 +49,10 @@ export const navLinks = [
 
 const services = [
   {
+    title: "Software Engineer",
+    icon: creator,
+  },
+  {
     title: "Web Developer",
     icon: web,
   },
@@ -49,9 +60,25 @@ const services = [
     title: "Backend Developer",
     icon: backend,
   },
+  {
+    title: "Python Developer",
+    icon: mobile,
+  },
 ];
 
 const technologies = [
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Django",
+    icon: django,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -73,6 +100,14 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Vite",
+    icon: vite,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  /*{
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -91,19 +126,15 @@ const technologies = [
   {
     name: "Three JS",
     icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
+  },*/
+  /*{
     name: "figma",
     icon: figma,
   },
   {
     name: "docker",
     icon: docker,
-  },
+  },*/
 ];
 
 const experiences = [
@@ -190,58 +221,60 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Speak Now",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A web-based public speaking tool designed to help users improve their public speaking skills by providing detailed feedback on their facial expressions and voice tone.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "python",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "opencv",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: speaknow,
+    website_link: "https://speak-now-ai.vercel.app/",
+    source_code_link: "https://github.com/saradotdev/Speak-Now",
   },
   {
-    name: "Job IT",
+    name: "Recipe Blog",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A full-stack recipe blog web application that allows users to browse categories, view detailed recipes, and manage blog posts efficiently.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
       },
       {
         name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: recipeblog,
+    website_link: "https://recipe-blog-react.vercel.app/",
+    source_code_link: "https://github.com/saradotdev/Recipe-Blog",
   },
   {
-    name: "Trip Guide",
+    name: "Adopt Me",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Web-based pet adoption platform that allows users to browse and adopt pets, with features for searching, filtering, and viewing pet profiles.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "vite",
         color: "green-text-gradient",
       },
       {
@@ -249,8 +282,75 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: adoptme,
+    website_link: "https://browse-and-adopt-me.vercel.app/",
+    source_code_link: "https://github.com/saradotdev/Adopt-Me",
+  },
+  {
+    name: "MovieFlix",
+    description:
+      "A web application designed to help manage movies and user information. It provides functionality for browsing, searching, and managing movies.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: movieflix,
+    website_link: "http://movieflix.infinityfreeapp.com/home.php",
+    source_code_link: "https://github.com/saradotdev/MovieFlix",
+  },
+  {
+    name: "Wordle",
+    description:
+      "A web-based word-guessing game that challenges players to guess a hidden five-letter word in six tries, with instant feedback on each attempt.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "html",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: wordle,
+    website_link: "https://saradotdev.github.io/Wordle-Game/",
+    source_code_link: "https://github.com/saradotdev/Wordle-Game",
+  },
+  {
+    name: "Musician Website",
+    description:
+      "A static website serving as a platform for fans to browse and add Ali Zafar's albums and merchandise to their carts, and view brief but essential information about his tours.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "html",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: musician,
+    website_link: "https://saradotdev.github.io/Musician-Website/",
+    source_code_link: "https://github.com/saradotdev/Musician-Website",
   },
 ];
 
