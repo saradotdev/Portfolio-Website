@@ -14,6 +14,9 @@ import {
   mysql,
   git,
   postman,
+  github,
+  linkedin,
+  instagram,
   //redux,
   //tailwind,
   //nodejs,
@@ -40,7 +43,7 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -356,6 +359,24 @@ const projects = [
     image: musician,
     website_link: "https://saradotdev.github.io/Musician-Website/",
     source_code_link: "https://github.com/saradotdev/Musician-Website",
+  },
+];
+
+export const footerLinks = [
+  {
+    name: "github",
+    image: github,
+    link: "https://github.com/saradotdev/",
+  },
+  {
+    name: "linkedin",
+    image: linkedin,
+    link: "https://www.linkedin.com/in/saradotdev/",
+  },
+  {
+    name: "instagram",
+    image: instagram,
+    link: "https://www.instagram.com/_saraaa_aziz/",
   },
 ];
 

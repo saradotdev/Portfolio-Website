@@ -11,6 +11,7 @@ const Navbar = () => {
   return (
     <nav
       className={`paddingX w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      style={{ paddingTop: "1.25rem", paddingBottom: "1.25rem" }}
     >
       <div
         className="w-full flex justify-between items-center max-w-7xl mx-auto"
@@ -42,7 +43,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="paddingX sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
@@ -53,6 +54,7 @@ const Navbar = () => {
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            style={{ padding: "1.5rem" }}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
