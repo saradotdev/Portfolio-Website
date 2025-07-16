@@ -13,6 +13,7 @@ import {
   vite,
   mysql,
   git,
+  postman,
   //redux,
   //tailwind,
   //nodejs,
@@ -57,11 +58,11 @@ const services = [
     icon: web,
   },
   {
-    title: "Backend Developer",
+    title: "Problem Solver",
     icon: backend,
   },
   {
-    title: "Python Developer",
+    title: "Tech Enthusiast",
     icon: mobile,
   },
 ];
@@ -106,6 +107,10 @@ const technologies = [
   {
     name: "git",
     icon: git,
+  },
+  {
+    name: "postman",
+    icon: postman,
   },
   /*{
     name: "Redux Toolkit",
@@ -296,7 +301,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "php",
         color: "green-text-gradient",
       },
       {

@@ -18,6 +18,7 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import mysql from "./tech/mysql.png";
 import nodejs from "./tech/nodejs.png";
+import postman from "./tech/postman.png";
 import python from "./tech/python.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
@@ -58,6 +59,7 @@ export {
   mongodb,
   mysql,
   nodejs,
+  postman,
   python,
   reactjs,
   redux,

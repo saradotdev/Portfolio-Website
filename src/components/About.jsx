@@ -50,11 +50,15 @@ const About = () => {
           marginTop: "16px",
         }}
       >
-        I'm a passionate Software Engineer with a love for building clean,
-        efficient, and user-friendly digital experiences. I specialize in web
-        development, and I'm always excited to learn new technologies and solve
-        meaningful problems. When I'm not coding, you'll probably find me
-        exploring new ideas, reading, or simply enjoying the little moments!
+        I'm a passionate <span className="text-white">Software Engineer</span>{" "}
+        and a recent graduate of{" "}
+        <span className="text-white">NED University</span>. I specialize in{" "}
+        <span className="text-white">Web Development</span>, with strong
+        expertise in <span className="text-white">Python</span> and{" "}
+        <span className="text-white">JavaScript</span>, and I'm always excited
+        to learn new technologies and solve meaningful problems. When I'm not
+        coding, you'll probably find me exploring new ideas, reading, or simply
+        enjoying the little moments!
       </motion.p>
 
       <div className="flex flex-wrap gap-10" style={{ marginTop: "80px" }}>
