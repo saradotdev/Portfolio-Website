@@ -61,7 +61,7 @@ const About = () => {
         enjoying the little moments!
       </motion.p>
 
-      <div className="flex flex-wrap gap-10" style={{ marginTop: "80px" }}>
+      <div className="flex justify-center flex-wrap gap-10" style={{ marginTop: "80px" }}>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

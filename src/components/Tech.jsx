@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -8,6 +9,8 @@ import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
 
 const Tech = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -22,8 +25,22 @@ const Tech = () => {
         }}
       >
         {technologies.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
-            <BallCanvas icon={technology.icon} />
+          <div
+            className="w-28 h-28"
+            style={{
+              marginTop: "16px",
+            }}
+            key={technology.name}
+          >
+            {isMobile ? (
+              <img
+                src={technology.icon}
+                alt={technology.name}
+                className="w-full h-full object-contain"
+              />
+            ) : (
+              <BallCanvas icon={technology.icon} />
+            )}
           </div>
         ))}
       </div>
